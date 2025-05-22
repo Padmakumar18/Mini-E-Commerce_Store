@@ -10,10 +10,10 @@ function Navbar() {
       <input type="text" placeholder="Search here..." className="navbar__search" />
       <div className="navbar__actions">
         <button className="navbar__btn">
-          <FaShoppingCart size={15} /> Cart
+          <FaShoppingCart size={20} /> Cart
         </button>
         <button className="navbar__btn">
-          <FaUserCircle size={15} /> Profile
+          <FaUserCircle size={20} /> Profile
         </button>
       </div>
     </nav>
