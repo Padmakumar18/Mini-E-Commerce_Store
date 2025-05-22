@@ -12,14 +12,13 @@ import Sports from './Images/Sports.png'
 import Watch from './Images/Watch.png'
 import SlideBook from './Images/Book.png'
 import WiredEarphones from './Images/WiredEarphones.png'
-import SlidingImages from "./SlidingImages";
 
-import "./Home.scss";
+import "./SlidingImages.scss";
 
-function Home() {
+function SlidingImages() {
   return (
     <div className="home">
-      {/* <div className="sliding-carousel">
+      <div className="sliding-carousel">
         <div className="carousel-track">
           <img src={Asus} alt="Slide 1" />
           <img src={Samsung} alt="Slide 2" />
@@ -37,8 +36,7 @@ function Home() {
           <img src={Samsung} alt="Slide 2" />
           <img src={Airpods} alt="Slide 3" />
         </div>
-      </div> */}
-      <SlidingImages/>
+      </div>
 
       <div className="categories">
         <button><img src={Laptop} alt="Laptop" className="Laptop icon" /> <br></br> Electronics</button>
@@ -60,4 +58,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default SlidingImages;

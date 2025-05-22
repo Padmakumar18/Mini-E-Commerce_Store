@@ -1,0 +1,38 @@
+.sliding {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.sliding-carousel {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+
+  .carousel-track {
+    display: flex;
+    width: max-content;
+    animation: slide 20s linear infinite;
+
+    img {
+      width: 40em;
+      height: 20em;
+      object-fit: cover;
+      margin-right: 1rem;
+      border-radius: 10px;
+      flex-shrink: 0;
+
+      @media (max-width: 768px) {
+        width: 250px;
+        height: 130px;
+      }
+
+      @media (max-width: 480px) {
+        width: 200px;
+        height: 110px;
+      }
+    }
+  }
+}
