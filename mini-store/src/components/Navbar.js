@@ -1,4 +1,4 @@
-// Navbar.js
+
 import React from 'react';
 import './Navbar.scss';
 import { FaShoppingCart, FaUserCircle } from 'react-icons/fa';

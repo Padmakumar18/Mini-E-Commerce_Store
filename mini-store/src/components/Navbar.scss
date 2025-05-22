@@ -1,21 +1,55 @@
-$primary-color: #4caf50;
+$primary-color: #9AA6B2;
 $background-color: #fff;
-$text-color: #333;
-$btn-hover-color: darken($primary-color, 10%);
+$text-color: #F8FAFC;
+
+$color-one :#F8FAFC ;
+$color-two :#D9EAFD ;
+$color-three :#BCCCDC ;
+$color-four :#9AA6B2 ;
 
 .navbar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: $primary-color;
   padding: 1rem 2rem;
   color: $background-color;
+  flex-wrap: wrap;
 
   &__logo {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-right: 1rem;
     text-decoration: none;
     color: white;
+    z-index: 2;
+  }
+
+  &__toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  &__menu {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      width: 100%;
+      display: none;
+      background-color: $primary-color;
+
+      &.active {
+        display: flex;
+      }
+    }
   }
 
   &__search {
@@ -24,14 +58,23 @@ $btn-hover-color: darken($primary-color, 10%);
     border-radius: 4px;
     border: none;
     outline: none;
-    margin-right: 1rem;
+    margin: 1rem 0;
+
+    @media (min-width: 769px) {
+      margin: 0 1rem 0 2rem;
+    }
   }
 
   &__actions {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-left: auto;
+    margin: 1rem 0;
+
+    @media (min-width: 769px) {
+      margin-left: auto;
+      margin: 0;
+    }
   }
 
   &__btn {
