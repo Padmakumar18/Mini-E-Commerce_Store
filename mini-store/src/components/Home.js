@@ -1,12 +1,30 @@
 import React from "react";
+import Asus from './Images/Asus.png'
+import Samsung from './Images/Samsung.png'
+import Airpods from './Images/Airpods.png'
 import "./Home.scss";
 
 function Home() {
   return (
     <div className="home">
-      <div className="sliding">
-        <p>Here sliding the image</p>
+      <div className="sliding-carousel">
+        <div className="carousel-track">
+          <img src={Asus} alt="Slide 1" />
+          <img src={Samsung} alt="Slide 2" />
+          <img src={Airpods} alt="Slide 3" />
+          <img src={Asus} alt="Slide 1" />
+          <img src={Samsung} alt="Slide 2" />
+          <img src={Airpods} alt="Slide 3" />
+          <img src={Asus} alt="Slide 1" />
+          <img src={Samsung} alt="Slide 2" />
+          <img src={Airpods} alt="Slide 3" />
+          <img src={Asus} alt="Slide 1" />
+          <img src={Samsung} alt="Slide 2" />
+          <img src={Airpods} alt="Slide 3" />
+          {/* <img src="https://via.placeholder.com/300x150?text=Image+4" alt="Slide 4" /> */}
+        </div>
       </div>
+
       <div className="categories">
         <button>Electronics</button>
         <button>Fashion</button>

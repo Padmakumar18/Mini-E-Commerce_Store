@@ -8,17 +8,58 @@
     font-weight: bold;
   }
 
+  .sliding-carousel {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+
+    .carousel-track {
+      display: flex;
+      width: max-content;
+      animation: slide 20s linear infinite;
+
+      img {
+        width: 40em;
+        height:20em;
+        object-fit: cover;
+        margin-right: 1rem;
+        border-radius: 10px;
+        flex-shrink: 0;
+
+        @media (max-width: 768px) {
+          width: 250px;
+          height: 130px;
+        }
+
+        @media (max-width: 480px) {
+          width: 200px;
+          height: 110px;
+        }
+      }
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
   .categories {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 
     @media (max-width: 1024px) {
-      grid-template-columns: repeat(2, 1fr); 
+      grid-template-columns: repeat(2, 1fr);
     }
 
     @media (max-width: 600px) {
-      grid-template-columns: 1fr; 
+      grid-template-columns: 1fr;
     }
 
     button {
@@ -34,15 +75,23 @@
       transition: background 0.3s, transform 0.2s;
 
       &:hover {
-        background-color: darken(#F8FAFC, 10%);
+        background-color: darken(#f8fafc, 10%);
         transform: translateY(-2px);
-        // color: white;
       }
 
       @media (max-width: 768px) {
         font-size: 0.9rem;
         padding: 0.8rem;
       }
+    }
+  }
+
+  .randomProducts {
+    .sliding {
+      padding: 10px;
+      background: #f4f4f4;
+      text-align: center;
+      font-weight: bold;
     }
   }
 }
