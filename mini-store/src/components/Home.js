@@ -10,6 +10,8 @@ import Medicine from './Images/Medicine.jpg'
 import Books from './Images/Books.jpg'
 import Sports from './Images/Sports.png'
 import Watch from './Images/Watch.png'
+import SlideBook from './Images/Book.png'
+import WiredEarphones from './Images/WiredEarphones.png'
 
 import "./Home.scss";
 
@@ -21,12 +23,15 @@ function Home() {
           <img src={Asus} alt="Slide 1" />
           <img src={Samsung} alt="Slide 2" />
           <img src={Airpods} alt="Slide 3" />
+          <img src={SlideBook} alt="Slide 4" />
+
+          <img src={WiredEarphones} alt="Slide 5" />
+          <img src={Airpods} alt="Slide 3" />
+
           <img src={Asus} alt="Slide 1" />
           <img src={Samsung} alt="Slide 2" />
           <img src={Airpods} alt="Slide 3" />
-          <img src={Asus} alt="Slide 1" />
-          <img src={Samsung} alt="Slide 2" />
-          <img src={Airpods} alt="Slide 3" />
+
           <img src={Asus} alt="Slide 1" />
           <img src={Samsung} alt="Slide 2" />
           <img src={Airpods} alt="Slide 3" />
