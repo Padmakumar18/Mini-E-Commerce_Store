@@ -1,57 +1,63 @@
-  .home {
-    padding: 2rem;
-    
-    @keyframes slide {
-      0% {
-        transform: translateX(0%);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
+.home {
+  padding: 2rem;
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
     }
-
-    .categories {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2rem;
-
-      @media (max-width: 1024px) {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      @media (max-width: 600px) {
-        grid-template-columns: 1fr;
-      }
-
-      button {
-        padding: 1rem;
-        height: 10em;
-        background-color: #f8fafc;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        color: black;
-        border: none;
-        border-radius: 8px;
-        font-size: 1.2rem;
-        cursor: pointer;
-        transition: background 0.3s, transform 0.2s;
-
-        &:hover {
-          background-color: darken(#f8fafc, 10%);
-          transform: translateY(-2px);
-        }
-
-        @media (max-width: 768px) {
-          font-size: 0.9rem;
-          padding: 0.8rem;
-        }
-      }
+    100% {
+      transform: translateX(-50%);
     }
   }
 
-  .icon {
-      width: 5em;
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
     }
 
-  .Kitchen {
-    width: 10em;
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+
+    button {
+      padding: 1rem;
+      height: 10em;
+      background-color: #f8fafc;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      color: black;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+
+      &:hover {
+        background-color: darken(#f8fafc, 10%);
+        transform: translateY(-2px);
+      }
+
+      @media (max-width: 768px) {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+      }
+    }
   }
+}
+
+.icon {
+  width: 5em;
+}
+
+.Kitchen {
+  width: 10em;
+}
+
+.text {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}

@@ -1,7 +1,3 @@
-import React from "react";
-import Asus from './Images/Asus.png'
-import Samsung from './Images/Samsung.png'
-import Airpods from './Images/Airpods.png'
 import Laptop from './Images/Laptop.png'
 import Dress from './Images/Dress.png'
 import Kitchen from './Images/Kitchen.jpg'
@@ -10,8 +6,6 @@ import Medicine from './Images/Medicine.jpg'
 import Books from './Images/Books.jpg'
 import Sports from './Images/Sports.png'
 import Watch from './Images/Watch.png'
-import SlideBook from './Images/Book.png'
-import WiredEarphones from './Images/WiredEarphones.png'
 import SlidingImages from "./SlidingImages";
 
 import "./Home.scss";
@@ -19,27 +13,9 @@ import "./Home.scss";
 function Home() {
   return (
     <div className="home">
-      {/* <div className="sliding-carousel">
-        <div className="carousel-track">
-          <img src={Asus} alt="Slide 1" />
-          <img src={Samsung} alt="Slide 2" />
-          <img src={Airpods} alt="Slide 3" />
-          <img src={SlideBook} alt="Slide 4" />
 
-          <img src={WiredEarphones} alt="Slide 5" />
-          <img src={Airpods} alt="Slide 3" />
-
-          <img src={Asus} alt="Slide 1" />
-          <img src={Samsung} alt="Slide 2" />
-          <img src={Airpods} alt="Slide 3" />
-
-          <img src={Asus} alt="Slide 1" />
-          <img src={Samsung} alt="Slide 2" />
-          <img src={Airpods} alt="Slide 3" />
-        </div>
-      </div> */}
       <SlidingImages/>
-
+      <p className='text'>Categories</p>
       <div className="categories">
         <button><img src={Laptop} alt="Laptop" className="Laptop icon" /> <br></br> Electronics</button>
         <button><img src={Dress} alt="Laptop" className="Fashion icon" /> <br></br> Fashion</button>
@@ -53,7 +29,7 @@ function Home() {
 
       <div className="randomProducts">
         <div className="sliding">
-          <p>Random products</p>
+          <p>Top pics</p>
         </div>
       </div>
     </div>
