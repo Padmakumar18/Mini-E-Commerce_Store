@@ -4,9 +4,6 @@ function Profile() {
   return (
     <div className="profile-section">
       <div className="first-section">
-        <div className="profile-photo">
-          <p>Here photos</p>
-        </div>
         <div className="user-details">
           <p>Padmakumar</p>
           <p>padmakumar@gmail.com</p>

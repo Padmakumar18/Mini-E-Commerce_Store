@@ -12,7 +12,7 @@ function Navbar() {
       <input type="text" placeholder="Search here..." className="navbar__search" />
       <div className="navbar__actions">
         <button className="navbar__btn">
-          <FaShoppingCart size={20} /> Cart
+          <FaShoppingCart size={20} /> My Orders
         </button>
         <button className="navbar__btn">
           <FaUserCircle size={20} /> Profile
